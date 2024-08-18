@@ -1,0 +1,67 @@
+/* Navigation.css */
+
+.nav-container {
+    background: linear-gradient(to bottom, #1e3a8a, #2563eb);
+    width: 80px; /* Adjusted width for better visual appeal */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Adjusted spacing between buttons */
+  }
+  
+  .nav-button {
+    background: #4b5563; /* Darker gray background */
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-button:hover {
+    background: #6b7280; /* Lighter gray on hover */
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: auto;
+    padding: 6px 12px;
+    color: #333; /* Text color */
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1000; /* Ensure it appears above other elements */
+    left: 110%; /* Position to the right of the button */
+    top: 50%; /* Vertically center relative to the button */
+    transform: translateY(-50%); /* Center vertically relative to the button */
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    background: transparent; /* Ensure no background color */
+    border: 1px solid #333; /* Add a border for better visibility */
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50%) translateX(10px); /* Slightly offset to the right */
+  }
+  

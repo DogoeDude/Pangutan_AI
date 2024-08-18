@@ -1,0 +1,5 @@
+/* In your CSS file or Tailwind configuration */
+.custom-long-input {
+    width: 80vw; /* Or use a larger fixed value like 800px if preferred */
+  }
+  
